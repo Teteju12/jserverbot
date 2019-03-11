@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/Teteju12/jserverbot/issues"
   },
-  "homepage": "https://github.com/Teteju12/jserverbot#readme"
+  "homepage": "https://github.com/Teteju12/jserverbot#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "jserverbottest": "git+https://bitbucket.org/js_school/jserverbottest.git"
+  }
 }
