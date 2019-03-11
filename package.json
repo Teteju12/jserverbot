@@ -1,0 +1,19 @@
+{
+  "name": "jserverbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teteju12/jserverbot.git"
+  },
+  "author": "Javier Maldonado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Teteju12/jserverbot/issues"
+  },
+  "homepage": "https://github.com/Teteju12/jserverbot#readme"
+}
