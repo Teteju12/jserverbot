@@ -20,6 +20,9 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
-    "jserverbottest": "git+https://bitbucket.org/js_school/jserverbottest.git"
+    "file-type": "^10.9.0",
+    "http": "0.0.0",
+    "jserverbottest": "git+https://bitbucket.org/js_school/jserverbottest.git",
+    "read-chunk": "^3.1.0"
   }
 }

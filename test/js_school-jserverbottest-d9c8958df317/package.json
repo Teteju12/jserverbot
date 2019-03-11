@@ -1,0 +1,19 @@
+{
+  "name": "jserverbottest",
+  "version": "1.0.0",
+  "description": "Node.js Exam test by Jose A. Andujar Clavell",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jandujar@bitbucket.org/js_school/jserverbottest.git"
+  },
+  "author": "Jose A. Andujar Clavell",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/js_school/jserverbottest#readme",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}

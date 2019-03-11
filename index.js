@@ -1,5 +1,7 @@
 const express = require('express');
 var bodyparser = require('body-parser');
+const http = require('http');
+const fileType = require('file-type');
 var app = express();
 
 var nonDuplicatedNamesList = [];
@@ -52,12 +54,33 @@ app.post('/removeduplicatewords', function(req,res){
   }
 
   for(let j= 0; j < nonDuplicatedNamesList.length; j++){
-    finalList += nonDuplicatedNamesList[j] + " / ";
+
+    if(j == 0){
+      finalList += nonDuplicatedNamesList[j];
+    }
+    else{
+      finalList += "," + nonDuplicatedNamesList[j];
+    }
+
   }
 
   res.send(finalList);
   console.log(finalList);
 
+});
+
+app.post('/detectfiletype', function(req,res){
+
+  var url = req.body.url;
+
+  http.get(url, function(response){
+      response.on('readable', function(){
+          const chunk = response.read(fileType.minimumBytes);
+          response.destroy();
+          res.send(fileType(chunk));
+          console.log(fileType(chunk));
+      });
+    });
 });
 
 
@@ -71,7 +94,6 @@ app.get('/botorder/:order', function(req,res){
   }
 
 });
-
 app.post('/botorder/:order', function(req,res){
 
   if(req.body.botorder != null){
